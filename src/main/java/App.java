@@ -11,7 +11,7 @@ public class App {
     public static void main(String[] args) {
 
 
-        ArrayList<Sweetnees> myList = new ArrayList<Sweetnees>();
+        ArrayList<Sweetnees> myList = new ArrayList<>();
 
         myList.add(new CandyChew());
         myList.add(new CandyChocoBar());
