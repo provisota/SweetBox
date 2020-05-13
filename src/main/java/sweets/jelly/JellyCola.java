@@ -1,7 +1,7 @@
-package sweets;
+package sweets.jelly;
 
-public class Jelly extends Sweetnees {
-    public Jelly() {
+public class JellyCola extends Jelly {
+    public JellyCola() {
         super();
         this.setTitle("мармелад");
         this.setWeight(19);

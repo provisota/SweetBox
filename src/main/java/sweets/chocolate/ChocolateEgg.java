@@ -1,7 +1,9 @@
-package sweets;
+package sweets.chocolate;
 
-public class ChokoEgg extends Sweetnees {
-    public ChokoEgg() {
+import sweets.Sweetnees;
+
+public class ChocolateEgg extends Chocolate {
+    public ChocolateEgg() {
         super();
         this.setTitle("киндер-сюрприз");
         this.setWeight(30);

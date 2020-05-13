@@ -1,7 +1,7 @@
-package sweets;
+package sweets.candy;
 
-public class Candy extends Sweetnees {
-    public Candy() {
+public class CandyRom extends Candy {
+    public CandyRom() {
         super();
         this.setTitle("пьяный пират");
         this.setWeight(15);

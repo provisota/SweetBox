@@ -1,12 +1,11 @@
-package sweets;
+package sweets.lollypop;
 
-public class Lollypop extends Sweetnees {
-    public Lollypop() {
+public class LollypopInStick extends Lollypop {
+    public LollypopInStick() {
         super();
         this.setTitle("чупа-чупс");
         this.setWeight(12);
         this.setPrice(10);
         this.setUnique_parameter("с жевательной начинкой");
     }
-
 }
