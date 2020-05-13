@@ -12,7 +12,7 @@ public abstract class Sweetnees {
                 "название='" + title + '\'' +
                 ", вес=" + weight +
                 ", цена=" + price +
-                ", уникальный павраметр='" + unique_parameter + '\'' +
+                ", уникальный параметр='" + unique_parameter + '\'' +
                 '}';
         return info;
     }
