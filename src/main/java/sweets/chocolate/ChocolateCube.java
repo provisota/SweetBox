@@ -1,13 +1,9 @@
 package sweets.chocolate;
 
-import sweets.Sweetnees;
+import sweets.Sweet;
 
-public class ChocolateCube extends Sweetnees {
+public class ChocolateCube extends Sweet {
     public ChocolateCube() {
-        super();
-        this.setTitle("плитка шоколада");
-        this.setWeight(45);
-        this.setPrice(61);
-        this.setUnique_parameter("квадратиш практиш гуд");
+        super("плитка шоколада", 45, 61, "квадратиш практиш гуд");
     }
 }

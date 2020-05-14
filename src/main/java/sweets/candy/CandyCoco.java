@@ -1,13 +1,9 @@
 package sweets.candy;
 
-import sweets.Sweetnees;
+import sweets.Sweet;
 
-public class CandyCoco extends Sweetnees {
+public class CandyCoco extends Sweet {
     public CandyCoco() {
-        super();
-        this.setTitle("кокосанка");
-        this.setWeight(15);
-        this.setPrice(18);
-        this.setUnique_parameter("райское наслаждение");
+        super("кокосанка", 15, 18, "райское наслаждение");
     }
 }

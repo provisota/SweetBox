@@ -1,13 +1,9 @@
 package sweets.jelly;
 
-import sweets.Sweetnees;
+import sweets.Sweet;
 
-public class JellyCola extends Sweetnees {
+public class JellyCola extends Sweet {
     public JellyCola() {
-        super();
-        this.setTitle("мармелад");
-        this.setWeight(19);
-        this.setPrice(9);
-        this.setUnique_parameter("со вкусом кока-колы");
+        super("мармелад", 19, 9, "со вкусом кока-колы");
     }
 }

@@ -1,13 +1,9 @@
 package sweets.jelly;
 
-import sweets.Sweetnees;
+import sweets.Sweet;
 
-public class JellyRandom extends Sweetnees {
+public class JellyRandom extends Sweet {
     public JellyRandom() {
-        super();
-        this.setTitle("мармелад");
-        this.setWeight(19);
-        this.setPrice(9);
-        this.setUnique_parameter("угадай вкус");
+        super("мармелад", 19, 9, "угадай вкус");
     }
 }

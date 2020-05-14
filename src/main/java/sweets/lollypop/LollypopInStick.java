@@ -1,13 +1,9 @@
 package sweets.lollypop;
 
-import sweets.Sweetnees;
+import sweets.Sweet;
 
-public class LollypopInStick extends Sweetnees {
+public class LollypopInStick extends Sweet {
     public LollypopInStick() {
-        super();
-        this.setTitle("чупа-чупс");
-        this.setWeight(12);
-        this.setPrice(10);
-        this.setUnique_parameter("с жевательной начинкой");
+        super("чупа-чупс", 12, 10, "с жевательной начинкой");
     }
 }

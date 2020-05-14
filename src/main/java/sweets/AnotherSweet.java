@@ -1,10 +1,7 @@
 package sweets;
 
-public class AnotherSweet extends Sweetnees {
+import lombok.NoArgsConstructor;
 
-
-
-    public AnotherSweet() {
-        super();
-    }
+@NoArgsConstructor
+public class AnotherSweet extends Sweet {
 }

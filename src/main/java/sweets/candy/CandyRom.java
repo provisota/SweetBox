@@ -1,13 +1,9 @@
 package sweets.candy;
 
-import sweets.Sweetnees;
+import sweets.Sweet;
 
-public class CandyRom extends Sweetnees {
+public class CandyRom extends Sweet {
     public CandyRom() {
-        super();
-        this.setTitle("пьяный пират");
-        this.setWeight(10);
-        this.setPrice(16);
-        this.setUnique_parameter("с ромом");
+        super("пьяный пират", 10, 16, "с ромом");
     }
 }
