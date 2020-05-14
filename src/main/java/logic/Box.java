@@ -137,7 +137,12 @@ public class Box implements Optimization,Preparation {
                         getInfo();
                     }
                     if (num > 0) {
-                        addSweet(menu.getSweetMenu()[num]);
+                        try {
+                            addSweet(menu.getSweetMenu()[num]);
+                        }catch (Exception e) {
+                            System.out.println("ты вышел за предел дозволенного");
+                            reader.readLine();
+                        }
                         getInfo();
                     }
                 }
@@ -172,7 +177,15 @@ public class Box implements Optimization,Preparation {
 
     @Override
     public void deleteLastSweet() {
-        box.remove(box.size()-1);
+
+        if(box.size()==0) {
+            System.out.println("ты уже все удалил");
+        } else {
+            System.out.println("Удалена сладость " +box.get(box.size()-1).getTitle()+" по индексу : "+(box.size()));
+            box.remove(box.size()-1);
+        }
+
+
     }
 
     @Override
@@ -204,13 +217,16 @@ public class Box implements Optimization,Preparation {
 
         if (!(box.size()==0)) {
             int index = 0;
-            getInfo();
+
             System.out.println("Содержание коробки:");
             for (Sweetnees sw : box) {
                 index++;
                 String prefix = "Индекс: "+index+", ";
                 System.out.println(prefix+sw.toString());
+
             }
+            System.out.println();
+            getInfo();
         }
         else System.out.println("коробка пуста");
     }
@@ -225,10 +241,11 @@ public class Box implements Optimization,Preparation {
             ) {
                 if (sweetnees.getWeight()<min) {
                     min = sweetnees.getWeight();
-                    System.out.println("минимальный вес конфеты в подарке: " + min);
+
                     minSweet = sweetnees;
                 }
             }
+            System.out.println("минимальный вес конфеты в подарке: " + min);
             box.remove(minSweet);
             min = Double.MAX_VALUE;
             if (minSweet != null) {
@@ -250,10 +267,11 @@ public class Box implements Optimization,Preparation {
             ) {
                 if (sweetnees.getPrice()<min) {
                     min = sweetnees.getPrice();
-                    System.out.println("минимальное цена конфеты  в подарке: " + min);
+
                     minSweet = sweetnees;
                 }
             }
+            System.out.println("минимальное цена конфеты  в подарке: " + min);
             box.remove(minSweet);
             min = Double.MAX_VALUE;
             if (minSweet != null) {
