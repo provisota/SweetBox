@@ -2,7 +2,7 @@ package sweets.chocolate;
 
 import sweets.Sweetnees;
 
-public class ChocolateEgg extends Chocolate {
+public class ChocolateEgg extends Sweetnees {
     public ChocolateEgg() {
         super();
         this.setTitle("киндер-сюрприз");

@@ -1,6 +1,8 @@
 package sweets.jelly;
 
-public class JellyCola extends Jelly {
+import sweets.Sweetnees;
+
+public class JellyCola extends Sweetnees {
     public JellyCola() {
         super();
         this.setTitle("мармелад");

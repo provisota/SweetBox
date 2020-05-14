@@ -55,11 +55,11 @@ public abstract class Sweetnees {
 
     private String getInfo() {
         String info = "";
-        info += "Сладость{" +
-                "название='" + title + '\'' +
-                ", вес=" + weight +
-                "гр., цена=" + price +
-                "руб., уникальный параметр='" + unique_parameter + '\'' +
+        info += "Сладость=\"" + title + '\"' +
+                ", уникальный параметр=\"" + unique_parameter + '\"' +
+                ", цена=" + price +
+                "руб., вес=" + weight +
+                "гр." +
                 '}';
         return info;
     }

@@ -1,6 +1,8 @@
 package sweets.lollypop;
 
-public class LollypopInStick extends Lollypop {
+import sweets.Sweetnees;
+
+public class LollypopInStick extends Sweetnees {
     public LollypopInStick() {
         super();
         this.setTitle("чупа-чупс");

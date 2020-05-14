@@ -1,6 +1,8 @@
 package sweets.chocolate;
 
-public class ChocolateCube extends Chocolate {
+import sweets.Sweetnees;
+
+public class ChocolateCube extends Sweetnees {
     public ChocolateCube() {
         super();
         this.setTitle("плитка шоколада");
